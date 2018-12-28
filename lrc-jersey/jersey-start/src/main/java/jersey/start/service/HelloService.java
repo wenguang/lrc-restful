@@ -9,8 +9,16 @@ import javax.ws.rs.core.MediaType;
 public class HelloService {
 
     @GET
+    @Path("hi")
     @Produces(MediaType.TEXT_PLAIN)
     public String hi() {
         return "hi, jersey!";
+    }
+
+    @GET
+    @Path("msg")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String msg() {
+        return "i am msg";
     }
 }

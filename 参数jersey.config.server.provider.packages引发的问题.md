@@ -1,3 +1,20 @@
+web.xml中配置jersey
+```
+    <servlet>
+        <servlet-name>jerseyServletContainer</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>jersey.start.service</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jerseyServletContainer</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+```
+
 org.glassfish.jersey.servlet.ServletContainer是整个jersey核心控制器，
 它继承自HttpServlet，jersey.config.server.provider.packages是其中一个init-param,
 它用于扫描jersey中REST服务类所在的包（可以简单理解为SpringMVC中的component-scan）

@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jersey-start" />
+        <module name="jersey-http-start" />
+        <module name="jersey-servlet-start" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jersey-passport" target="1.7" />
+      <module name="jersey-start" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

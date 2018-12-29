@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/jersey-http-start" />
     <file type="web" url="file://$PROJECT_DIR$/jersey-passport" />
+    <file type="web" url="file://$PROJECT_DIR$/jersey-servlet-start" />
     <file type="web" url="file://$PROJECT_DIR$/jersey-start" />
   </component>
   <component name="MavenProjectsManager">
@@ -14,6 +16,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/jersey-passport/pom.xml" />
+        <option value="$PROJECT_DIR$/jersey-start/pom.xml" />
       </set>
     </option>
   </component>

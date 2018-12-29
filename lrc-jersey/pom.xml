@@ -8,7 +8,8 @@
     <artifactId>lrc-jersey</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>jersey-start</module>
+        <module>jersey-servlet-start</module>
+        <module>jersey-http-start</module>
     </modules>
     <packaging>pom</packaging>
 

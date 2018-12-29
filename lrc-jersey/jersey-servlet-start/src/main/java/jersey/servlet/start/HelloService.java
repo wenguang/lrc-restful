@@ -1,4 +1,4 @@
-package jersey.start.service;
+package jersey.servlet.start;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

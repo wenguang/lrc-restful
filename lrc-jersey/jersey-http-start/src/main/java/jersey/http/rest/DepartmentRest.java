@@ -1,4 +1,4 @@
-package jersey.start.rest;
+package jersey.http.rest;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -12,20 +12,20 @@ import java.util.*;
 @Path("dept")
 public class DepartmentRest {
 
-    @GET
-    public String hi() {
-        return "hi";
-    }
-
 //    @GET
-//    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-//    @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-//    public List<Department> list() {
-//        List<Department> dept = new ArrayList<Department>();
-//        dept.add(new Department(1L, "dept1"));
-//        dept.add(new Department(2L, "dept2"));
-//        return dept;
+//    public String hi() {
+//        return "hi";
 //    }
+
+    @GET
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    public List<Department> list() {
+        List<Department> dept = new ArrayList<Department>();
+        dept.add(new Department(1L, "dept1"));
+        dept.add(new Department(2L, "dept2"));
+        return dept;
+    }
 //
 //    @GET
 //    @Path("{id}")

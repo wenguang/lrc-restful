@@ -1,10 +1,10 @@
-package jersey.start.app;
+package jersey.http.start;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
 public class RestApplication extends ResourceConfig {
 
     public RestApplication() {
-        this.packages("jersey.start.rest", "jersey.start.service");
+        this.packages("jersey.http.rest");
     }
 }

@@ -1,4 +1,4 @@
-package jersey.start.rest;
+package jersey.http.rest;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,3 +16,4 @@ class Department {
     private Long id;
     private String name;
 }
+

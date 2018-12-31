@@ -1,8 +1,6 @@
 package jersey.servlet.start;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 @Path("hello")
@@ -15,10 +13,19 @@ public class HelloService {
         return "hi, jersey!";
     }
 
-    @GET
-    @Path("msg")
+
+    @POST
+    @Path("echo")
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.TEXT_PLAIN)
-    public String msg() {
-        return "i am msg";
+    public String echo(@FormParam("msg") String msg) {
+        return "client say: " + msg;
+    }
+
+    @POST //2
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Produces(MediaType.TEXT_PLAIN)
+    public String save(@FormParam("name") String name) {
+        return  name;
     }
 }

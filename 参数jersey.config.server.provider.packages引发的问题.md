@@ -1,3 +1,6 @@
+
+(说在前面：怎么也找不到jersey.config.server.provider.packages定义在哪儿，倒是可以试试用servlet的getInitParameterNames来获取初始化参数名)
+
 web.xml中配置jersey
 ```
     <servlet>

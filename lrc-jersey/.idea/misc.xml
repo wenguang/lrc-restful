@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/jersey-http-start" />
     <file type="web" url="file://$PROJECT_DIR$/jersey-passport" />
     <file type="web" url="file://$PROJECT_DIR$/jersey-servlet-start" />
+    <file type="web" url="file://$PROJECT_DIR$/jersey-spring" />
     <file type="web" url="file://$PROJECT_DIR$/jersey-start" />
   </component>
   <component name="MavenProjectsManager">
